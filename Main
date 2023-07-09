@@ -31,3 +31,30 @@ Corner:Clone().Parent = Button
 Button.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Gru")
 end)
+local Button2 = Instance.new("TextButton")
+Button2.Parent = Gui
+Button2.Text = "Scientist"
+Button2.Size = UDim2.new(0, 200,0, 50)
+Button2.Position = UDim2.new(0.800, 0,0.259, 0)
+Button2.RichText = true
+Button2.TextScaled = true
+Button2.BackgroundColor = BrickColor.new("Dark grey")
+Button2.TextColor = BrickColor.new("Institutional white")
+Corner:Clone().Parent = Button2
+Button2.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Scientist")
+end)
+local Button3 = Instance.new("TextButton")
+Button3.Parent = Gui
+Button3.Text = "ClassD"
+Button3.Size = UDim2.new(0, 200,0, 50)
+Button3.Position = UDim2.new(0.800, 0,0.323, 0)
+Button3.RichText = true
+Button3.TextScaled = true
+Button3.BackgroundColor = BrickColor.new("Dark grey")
+Button3.TextColor = BrickColor.new("Institutional white")
+Corner:Clone().Parent = Button2
+Button3.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("ClassD")
+end)
+
