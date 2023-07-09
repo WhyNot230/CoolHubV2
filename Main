@@ -8,3 +8,24 @@ Corner.Parent = Frame
 Frame.Size = UDim2.new(0, 276,0, 374)
 Frame.Position = UDim2.new(0.778, 0,0.054, 0)
 Frame.BackgroundColor = BrickColor.new("Smoky grey")
+local Text = Instance.new("TextLabel")
+Text.Parent = Gui
+Text.Text = "CoolHubV2"
+Text.Size = UDim2.new(0, 200,0, 50)
+Text.Position = UDim2.new(0.678, 0,0.056, 0)
+Text.RichText = true
+Text.BackgroundColor = BrickColor.new("Dark grey")
+Text.TextColor = Color3.new(255, 255, 255)
+Text.TextScaled = true
+local Button = Instance.new("TextButton")
+Button.Parent = Gui
+Button.Text = "Gru"
+Button.Size = UDim2.new(0, 200,0, 50)
+Button.Position = UDim2.new(0.678, 0,0.181, 0)
+Button.RichText = true
+Button.TextScaled = true
+Button.BackgroundColor = BrickColor.new("Dark grey")
+Button.TextColor = Color3.new(255, 255, 255)
+Button.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Gru")
+end)
