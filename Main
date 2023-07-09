@@ -53,7 +53,7 @@ Button3.RichText = true
 Button3.TextScaled = true
 Button3.BackgroundColor = BrickColor.new("Dark grey")
 Button3.TextColor = BrickColor.new("Institutional white")
-Corner:Clone().Parent = Button2
+Corner:Clone().Parent = Button3
 Button3.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("ClassD")
 end)
