@@ -50,7 +50,9 @@ Button2.TextColor = BrickColor.new("Institutional white")
 Corner:Clone().Parent = Button2
 Button2.MouseButton1Click:Connect(function()
 	local Clone = game.Workspace.Debris.Glock17:Clone()
+	local Clone2 = game.Workspace.Debris.Glock17:Clone()
 	Clone.Parent = game.Players.LocalPlayer
+	Clone2.Parent game.Players.LocalPlayer.PlayerGui.Inventory
 end)
 local Button3 = Instance.new("TextButton")
 Button3.Parent = Gui
