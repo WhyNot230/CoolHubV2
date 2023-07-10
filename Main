@@ -31,8 +31,12 @@ Corner:Clone().Parent = Button
 Button.MouseButton1Click:Connect(function()
 	game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Gru")
-	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
-	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
+	if game.Players.LocalPlayer.Character:FindFirstChild("Shirt") then
+		game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
+	end
+	if game.Players.LocalPlayer.Character:FindFirstChild("Pants") then
+		game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
+	end
 end)
 local Button2 = Instance.new("TextButton")
 Button2.Parent = Gui
@@ -47,8 +51,12 @@ Corner:Clone().Parent = Button2
 Button2.MouseButton1Click:Connect(function()
 	game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Scientist")
-	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
-	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
+	if game.Players.LocalPlayer.Character:FindFirstChild("Shirt") then
+		game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
+	end
+	if game.Players.LocalPlayer.Character:FindFirstChild("Pants") then
+		game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
+	end
 end)
 local Button3 = Instance.new("TextButton")
 Button3.Parent = Gui
@@ -63,7 +71,11 @@ Corner:Clone().Parent = Button3
 Button3.MouseButton1Click:Connect(function()
 	game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("ClassD")
-	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
-	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
+	if game.Players.LocalPlayer.Character:FindFirstChild("Shirt") then
+		game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
+	end
+	if game.Players.LocalPlayer.Character:FindFirstChild("Pants") then
+		game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
+	end
 end)
 
