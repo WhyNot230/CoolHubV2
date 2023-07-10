@@ -40,7 +40,7 @@ Button.MouseButton1Click:Connect(function()
 end)
 local Button2 = Instance.new("TextButton")
 Button2.Parent = Gui
-Button2.Text = "Scientist"
+Button2.Text = "Glock"
 Button2.Size = UDim2.new(0, 200,0, 50)
 Button2.Position = UDim2.new(0.800, 0,0.259, 0)
 Button2.RichText = true
@@ -49,14 +49,8 @@ Button2.BackgroundColor = BrickColor.new("Dark grey")
 Button2.TextColor = BrickColor.new("Institutional white")
 Corner:Clone().Parent = Button2
 Button2.MouseButton1Click:Connect(function()
-	game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
-	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Scientist")
-	if game.Players.LocalPlayer.Character:FindFirstChild("Shirt") then
-		game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
-	end
-	if game.Players.LocalPlayer.Character:FindFirstChild("Pants") then
-		game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
-	end
+	local Clone = game.Workspace.Debris.Glock17:Clone()
+	Clone.Parent = game.Players.LocalPlayer.Backpack
 end)
 local Button3 = Instance.new("TextButton")
 Button3.Parent = Gui
