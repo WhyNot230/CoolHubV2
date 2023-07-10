@@ -29,7 +29,10 @@ Button.TextColor = BrickColor.new("Institutional white")
 Corner:Clone().Parent = Text
 Corner:Clone().Parent = Button
 Button.MouseButton1Click:Connect(function()
+	game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Gru")
+	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
+	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
 end)
 local Button2 = Instance.new("TextButton")
 Button2.Parent = Gui
@@ -42,7 +45,10 @@ Button2.BackgroundColor = BrickColor.new("Dark grey")
 Button2.TextColor = BrickColor.new("Institutional white")
 Corner:Clone().Parent = Button2
 Button2.MouseButton1Click:Connect(function()
+	game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("Scientist")
+	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
+	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
 end)
 local Button3 = Instance.new("TextButton")
 Button3.Parent = Gui
@@ -55,6 +61,9 @@ Button3.BackgroundColor = BrickColor.new("Dark grey")
 Button3.TextColor = BrickColor.new("Institutional white")
 Corner:Clone().Parent = Button3
 Button3.MouseButton1Click:Connect(function()
+	game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
 	game.Players.LocalPlayer.Team = game.Teams:FindFirstChild("ClassD")
+	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "https://www.roblox.com/catalog/802124505/Class-D"
+	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "https://www.roblox.com/catalog/8636093379/Class-D"
 end)
 
